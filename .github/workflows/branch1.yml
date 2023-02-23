@@ -20,10 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pylint
+          pip install pylint-exit
           pip install black
           pip install -r requirements.txt
-
+          
+      - name: Run pylint
+        run: pylint polymath.py
 
       - name: Run black
         run: black polymath.py
