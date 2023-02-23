@@ -3,7 +3,7 @@ name: Python Code Analysis
 on:
   push:
     branches:
-      - branch1
+      - branch2
 
 jobs:
   code-analysis:
